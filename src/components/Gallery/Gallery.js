@@ -21,11 +21,10 @@ const MyCarouselWithDots = () => {
         value={value}
         onChange={onChange}
         thumbnails={[
-          (<img key={1} alt='game' className="img-example-small" src={img1} />),
-          (<img key={2} alt='game' className="img-example-small" src={img1} />),
-          (<img key={3} alt='game' className="img-example-small" src={img1} />),
-          (<img key={4} alt='game' className="img-example-small" src={img1} />),
-          (<img key={5} alt='game' className="img-example-small" src={img1} />)
+          (<img key={1} alt='game' className="img-example-small hiddenImg" src={img1} />),
+          (<img key={2} alt='game' className="img-example-small hiddenImg" src={img1} />),
+          (<img key={3} alt='game' className="img-example-small hiddenImg" src={img1} />),
+          (<img key={4} alt='game' className="img-example-small hiddenImg" src={img1} />),
         ]}
         //number={state.slides.length}
       />
@@ -36,7 +35,6 @@ const MyCarouselWithDots = () => {
         <img alt='game' className="img-example" src={img1} />
         <img alt='game' className="img-example" src={img1} />
         <ReactPlayer width={711} height={400} url='https://youtu.be/vUhr1cwTrnQ' controls={true}/>
-        <img alt='game' className="img-example" src={img1} />
         <img alt='game' className="img-example" src={img1} />
       </Carousel>
       

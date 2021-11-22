@@ -1,94 +1,53 @@
 .LoginPage {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b5179e), to(#5a189a));
   background-image: linear-gradient(180deg, #b5179e, #5a189a);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 }
-
 .LoginPage .LoginWrapper {
-  background-image: -webkit-gradient(linear, left top, right top, from(#b5173f), to(#30189a));
   background-image: linear-gradient(90deg, #b5173f, #30189a);
   margin: 80px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .LoginPage .Login {
   margin: 100px 0;
   background-color: black;
   color: grey;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   font-size: 16px;
   font-weight: 450;
 }
-
 @media screen and (max-width: 370px) {
   .LoginPage .Login {
     font-size: 14px;
   }
 }
-
 .LoginPage .Login .containerRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 10px;
 }
-
 .LoginPage .Login .myIcon {
   margin: 20px;
 }
-
 .LoginPage .Login h1, .LoginPage .Login h4 {
   color: white;
 }
-
 .LoginPage .Login p {
   margin: 0;
   padding: 5px;
 }
-
 .LoginPage .Login .underLineP {
   text-decoration: underline;
 }
-
 .LoginPage .Login button {
   background-color: black;
   color: white;
@@ -99,7 +58,6 @@
   font-weight: bolder;
   margin: 5px 0;
 }
-
 .LoginPage .Login input {
   border: 2px solid #4848ec;
   border-radius: 15px;
@@ -108,5 +66,4 @@
   font-weight: bold;
   background-color: black;
   margin: 5px 0;
-}
-/*# sourceMappingURL=LoginPage.css.map */
+}/*# sourceMappingURL=LoginPage.css.map */

@@ -1,28 +1,33 @@
-.GameCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    border-radius: 5px;
-    margin: 5px 5px;
-    
-    img{
-        width: 240px;
-        height: 200px;
-        margin: 0 auto;
-        
-    }
-    p{
-        margin: 0 auto;
-        font-weight: bolder;
-        color: black;
-    }
-    border: 1px solid rgb(90, 24, 154);
-}
+.GameCard {
+    color: rgba(0, 0, 0, 0.753);
+    margin: 20px;
+    width: 250px;
 
-.GameCard:hover {
-    box-shadow: 2px 2px 4px 2px crimson;
-    p{
-        color: crimson;
+    .Figure{
+        position: relative;
+        width: 100%;
+        //padding-top: 67%;
+        overflow: hidden;
+        margin-bottom: 0;
     }
+    p {
+        font-size: 18px;
+        font-weight: bolder;
+        margin: 3px 0;
+    }
+    img {
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        object-fit: cover;
+        transition: all 0.2s linear;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+    border: 1px solid grey;
+    border-radius: 4px;
 }

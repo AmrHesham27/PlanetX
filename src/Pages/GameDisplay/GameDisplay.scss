@@ -2,6 +2,7 @@
     margin : 50px 0 0 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     .headerContainer {
         width: 100%;
@@ -53,6 +54,9 @@
             //justify-items: flex-end;
             top: 100px;
             position: absolute;
+            @media screen and (max-width:600px) {
+                flex-direction: column;
+            }
         }
         }
     }

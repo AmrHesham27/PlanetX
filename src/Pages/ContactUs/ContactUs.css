@@ -1,10 +1,8 @@
 .contactUsPage .ContactUs {
   margin-bottom: 0;
 }
-
 @media screen and (max-width: 800px) {
   .contactUsPage .ContactUs {
     margin-bottom: 200px;
   }
-}
-/*# sourceMappingURL=ContactUs.css.map */
+}/*# sourceMappingURL=ContactUs.css.map */

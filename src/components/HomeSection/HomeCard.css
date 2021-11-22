@@ -5,20 +5,17 @@
   border: 1px solid grey;
   border-radius: 4px;
 }
-
 .HomeCard .Figure {
   position: relative;
   width: 100%;
   overflow: hidden;
   margin-bottom: 0;
 }
-
 .HomeCard p {
   font-size: 18px;
   font-weight: bolder;
   margin: 3px 0;
 }
-
 .HomeCard img {
   width: 300px;
   top: 0;
@@ -28,12 +25,8 @@
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-
 .HomeCard img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-/*# sourceMappingURL=HomeCard.css.map */
+  transform: scale(1.1);
+}/*# sourceMappingURL=HomeCard.css.map */

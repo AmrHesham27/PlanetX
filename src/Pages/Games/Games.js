@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/Footer'
 // utils
 import Img1 from '../../utils/1.jpg'
 import { useHistory } from 'react-router'
-import HomeCard from '../../components/HomeSection/HomeCard'
+import GameCard from '../../components/GameCard/GameCard'
 
 
 
@@ -22,16 +22,16 @@ const Games = () => {
             <div className="GamesPage">
                 <div className="containerCards">
                     <div onClick={()=>routeTo('/City Z')}>
-                        <HomeCard name='City Z' img={Img1} />
+                        <GameCard name='City Z' img={Img1} />
                     </div>
                     <div onClick={()=>routeTo('/City Z')}>
-                        <HomeCard name='City Z' img={Img1} />
+                        <GameCard name='City Z' img={Img1} />
                     </div><div onClick={()=>routeTo('/City Z')}>
-                        <HomeCard name='City Z' img={Img1} />
+                        <GameCard name='City Z' img={Img1} />
                     </div><div onClick={()=>routeTo('/City Z')}>
-                        <HomeCard name='City Z' img={Img1} />
+                        <GameCard name='City Z' img={Img1} />
                     </div><div onClick={()=>routeTo('/City Z')}>
-                        <HomeCard name='City Z' img={Img1} />
+                        <GameCard name='City Z' img={Img1} />
                     </div>
                 </div>
                 
