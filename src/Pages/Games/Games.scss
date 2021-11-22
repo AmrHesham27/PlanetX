@@ -1,0 +1,17 @@
+.GamesPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+
+    .containerCards {
+        margin: 60px auto 550px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+}

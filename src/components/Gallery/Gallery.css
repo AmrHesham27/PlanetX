@@ -1,0 +1,27 @@
+.img-example-small {
+  width: 180px;
+  height: 101px;
+  max-width: 380px;
+  border-radius: 5px;
+}
+
+.img-example {
+  width: 60%;
+}
+
+.BrainhubCarousel__dots .BrainhubCarousel__thumbnail {
+  opacity: 1;
+}
+
+.BrainhubCarousel__dots {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.thumb {
+  width: 200px;
+}
+/*# sourceMappingURL=Gallery.css.map */

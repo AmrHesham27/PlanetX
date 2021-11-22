@@ -1,0 +1,181 @@
+.About {
+    p {margin: 0;}
+    ///// content 1
+    .content1 {
+        background-color: white;
+        color: black;
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        @media screen and (max-width:500px) {
+            padding-right: 10%;
+            padding-left: 10%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .header1p {
+            //font-weight: bolder;
+            font-size: 3rem;
+            padding-bottom: 10px;
+            @media screen and (max-width:500px) {
+                font-size: 2rem;          
+            }
+
+        }
+        .p2p {
+            font-size: 1em;
+        }
+    }
+
+    .content2{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(246, 246, 246);
+        color: black;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            margin : 15px 20px;
+            width: 50%;
+            @media screen and (max-width:500px) {
+                width: 80%;
+            }
+        }
+
+        .p2p {
+            font-size: 1em;
+            @media screen and (max-width:500px) {
+                font-size: 1em;          
+            }
+        }
+        .p3p {
+            font-weight: bolder;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            border-width: 0 0 2px 0; /* top right bottom left */
+            border-style: solid;
+            border-color: rgb(207, 14, 14);
+            @media screen and (max-width:500px) {
+                font-size: 1.2em;          
+            }
+        }
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    /////// content 3
+    .content3{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: rgb(246, 246, 246);
+        color: black;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            margin : 15px 20px;
+            width: 50%;
+            @media screen and (max-width:500px) {
+                width: 80%;
+            }
+        }
+
+        .p2p {
+            font-size: 1em;
+            @media screen and (max-width:500px) {
+                font-size: 1em;          
+            }
+        }
+        .p3p {
+            font-weight: bolder;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            border-width: 0 0 2px 0; /* top right bottom left */
+            border-style: solid;
+            border-color: blue;
+            @media screen and (max-width:500px) {
+                font-size: 1.2em;          
+            }
+        }
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+   
+    
+    ///// the part of talk to us 
+    .horizontalLayout{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 0;
+
+        .talkToUs {
+            display: flex;
+            flex-direction: column;
+            flex: start;
+            width: 80%;
+    
+            .p1 {
+                font-size: 1.4em;
+                font-weight: bolder;        
+            }
+            
+            .p2 {
+                font-size: 1em;
+            
+            }
+
+            .horizontalFlex{
+                display: flex;
+                flex-direction: row;
+
+                i { 
+                    font-size: 2em;
+                    transition: all 0.5s;
+                }
+
+                .iContainer:hover {
+                    i {
+                        color: grey ;
+                        margin: 0 13px;
+                    }
+                }
+
+                .iContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    //////// foter follow us 
+    .FooterFollowUs {
+        padding-top: 100px ;
+    }
+}

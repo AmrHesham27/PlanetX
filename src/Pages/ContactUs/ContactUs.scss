@@ -1,0 +1,9 @@
+.contactUsPage {
+    .ContactUs{
+        margin-bottom: 0;
+        @media screen and (max-width:800px){
+            margin-bottom: 200px;
+        }
+    } 
+    
+}

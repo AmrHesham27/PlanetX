@@ -1,0 +1,123 @@
+.offcanvas-start{
+    max-width: 200px;
+}
+.offcanvas-header{
+    margin-top: 50px;
+}
+.nav-link {
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 12px 6px;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+#basic-nav-dropdown {
+    padding: 0;
+}
+.nav-link:hover,.nav-link:focus  {
+    color: white;
+    border-bottom: 2px solid white;
+}
+.bg-dark {
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+}
+// to hide button comes with nav => works
+.navbar-toggler, .collapsed {
+    visibility: hidden;
+}
+///
+.dropdown{
+    position: static;
+}
+.Header{
+    .myA {
+        background-color: transparent;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 12px 6px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+    }
+    .myA:hover {
+        border-bottom: 2px solid white;
+    }
+    .buttonsContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px;
+    }
+    .LogoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    //background-color: black;
+    //box-sizing: border-box;
+    //height: 48px;
+    background-color: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(10px);
+    ///// position sticky instead of fixed
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 ;
+    border-bottom-width: 0px;
+    // so that it display over anything
+    z-index: 3000;
+   
+    .logo {
+        color: white;
+        padding: 0 12px;
+        cursor: pointer;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    // menuIcon
+    .menuIcon {
+        color: white;
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+    .wrapperIcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .containerOne{
+        display: flex;
+        flex: row;
+        justify-content: space-around;
+        margin:5px;
+    }
+    
+    .Hbutton {
+        background-color: transparent;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 12px 6px;
+        border: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    .Hbutton:hover{
+        border-bottom: 2px solid white;
+    }
+
+    .pLink {
+        cursor: pointer;
+    }
+}

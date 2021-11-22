@@ -1,0 +1,28 @@
+.GameCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 5px;
+    margin: 5px 5px;
+    
+    img{
+        width: 240px;
+        height: 200px;
+        margin: 0 auto;
+        
+    }
+    p{
+        margin: 0 auto;
+        font-weight: bolder;
+        color: black;
+    }
+    border: 1px solid rgb(90, 24, 154);
+}
+
+.GameCard:hover {
+    box-shadow: 2px 2px 4px 2px crimson;
+    p{
+        color: crimson;
+    }
+}

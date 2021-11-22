@@ -1,0 +1,92 @@
+.GameDisplay {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.GameDisplay .headerContainer {
+  width: 100%;
+  /* Position text in the middle of the page/image */
+}
+
+.GameDisplay .headerContainer .bg-image {
+  /* The image used */
+  background-image: url("https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg");
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 500px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.GameDisplay .headerContainer .bg-image .hiddenText {
+  width: 30px;
+  padding-right: calc(50%-15px);
+  padding-left: calc(50%-15px);
+  visibility: hidden;
+}
+
+.GameDisplay .headerContainer .bg-text {
+  background-color: #8a7070;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.GameDisplay .headerContainer .bg-text .gameInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 100px;
+  position: absolute;
+}
+
+.GameDisplay .GameDescribtion {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 1em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.GameDisplay .gallery {
+  height: 500px;
+  max-width: 100%;
+}
+
+.BrainhubCarousel__dots {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+
+.BrainhubCarousel__container {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+/*# sourceMappingURL=GameDisplay.css.map */

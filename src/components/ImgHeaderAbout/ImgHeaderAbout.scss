@@ -1,0 +1,54 @@
+.hero-container {
+    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // if the video is too shiny use that
+    //box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.534);
+    object-fit: contain;
+
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+
+    h1 {
+        color: #fff;
+        //margin-top: 250px;
+        margin-bottom: 0;
+        font-size: 5em;
+        @media screen and (max-width:800px){
+            font-size: 3em;
+        }
+        @media screen and (max-width:500px){
+            font-size: 2em;
+        }
+    }
+
+    
+    .secondP_Wrapper {
+        display: flex;
+        flex: row;
+        justify-content: center;
+        justify-items: center;
+        width: 80%;
+
+        .firstP {
+            color: white ;
+            max-width: 500px;
+            font-size: 2em;
+            @media screen and (max-width:800px){
+                font-size: 1.5em;
+            }
+            @media screen and (max-width:500px){
+                font-size: 1em;
+            }
+        }
+    }
+}

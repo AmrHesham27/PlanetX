@@ -1,0 +1,76 @@
+.LoginPage{
+    background-image: linear-gradient(180deg,rgb(181, 23, 158), rgb(90, 24, 154));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    .LoginWrapper{
+        background-image: linear-gradient(90deg,rgb(181, 23, 63), rgb(48, 24, 154));
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+
+    .Login {
+        margin: 100px 0;
+        //width: 400px;
+        background-color: black;
+        color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 450;
+
+        @media screen and (max-width: 370px) {
+            font-size: 14px 
+
+        }
+        
+        .containerRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .myIcon{
+            margin : 20px ;
+        }
+        h1,h4{
+            color: white;
+        }
+        p{
+            margin:0;
+            padding: 5px;
+        }
+        .underLineP{
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            outline: none;
+            border: 2px solid rgb(47, 149, 47);
+            padding: 5px 40px;
+            border-radius: 15px;
+            font-weight: bolder;
+            margin: 5px 0;
+        }
+
+        input{
+            border : 2px solid rgb(72, 72, 236);
+            border-radius: 15px;
+            padding: 5px 10px;
+            color :grey;
+            font-weight: bold;
+            background-color: black;
+            margin: 5px 0;
+        }
+
+    }
+}
