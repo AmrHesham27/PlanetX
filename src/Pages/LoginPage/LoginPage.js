@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer"
 
 const LoginPage = () => {
     return (
-        <div className="LoginPage">
+        <div className="LoginPage" >
             <Header/>
             <div className="LoginWrapper">
                 <div className='Login'>
@@ -20,10 +20,10 @@ const LoginPage = () => {
                     <p className="underLineP">sign up</p>
                     <button>Login</button>
                     <div className="containerRow">
-                        <i style={{color:'blue'}} class="fab fa-facebook-square"></i>
-                        <i style={{color:'rgb(29, 155, 240)'}} class="fab fa-twitter"></i>
-                        <i style={{color:'blueviolet'}} class="fab fa-instagram-square"></i>
-                        <i style={{color:'red'}} class="fab fa-youtube"></i>
+                        <i style={{color:'blue'}} className="fab fa-facebook-square"></i>
+                        <i style={{color:'rgb(29, 155, 240)'}} className="fab fa-twitter"></i>
+                        <i style={{color:'blueviolet'}} className="fab fa-instagram-square"></i>
+                        <i style={{color:'red'}} className="fab fa-youtube"></i>
                     </div>
                 </div>
             </div>

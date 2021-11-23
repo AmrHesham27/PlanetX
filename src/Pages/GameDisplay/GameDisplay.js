@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header'
 import DemoCarousel from '../../components/Gallery/Gallery'
 import img1 from '../../utils/img1.jpg'
 import SwiperMultiSlides from '../../components/Swiper/Swiper'
+import ModalComponent from '../../components/Modal/Modal'
 //import img2 from '../../utils/img2.jpg'
 
 const GameDisplay = (props) => {
@@ -37,8 +38,8 @@ const GameDisplay = (props) => {
         <div className='gallery'>
           <DemoCarousel/>
         </div>
-
         <SwiperMultiSlides/>
+        <ModalComponent/>
       </div>
      
       </>
@@ -47,3 +48,4 @@ const GameDisplay = (props) => {
 
 export default GameDisplay
 //      <Footer/>  
+//        <SwiperMultiSlides/>
