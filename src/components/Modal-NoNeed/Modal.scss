@@ -1,0 +1,43 @@
+.myModal {
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+/////////////
+.myModalTitle {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(56, 56, 56);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.myModalTitle > .btn-close  {
+    visibility: hidden;
+}
+/////////////////
+.myModalBody {
+    color: white;
+    background-color: rgb(56, 56, 56);
+}
+//////////////////
+.myModalFooter {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(56, 56, 56);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.myModalFooter > .closeButton {
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+}

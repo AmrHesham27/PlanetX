@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.swiper-slide {
-  width: 120px;
-}
-
 .swiperHeader {
   display: flex;
   flex-direction: row;

@@ -63,8 +63,8 @@
 
     // game decriptoin 
     .GameDescribtion {
-        background-color: rgb(0, 0, 0);
-        color: white;
+        background-color: rgb(255, 255, 255);
+        color: black;
         font-weight: bolder;
         font-size: 1em;
         padding-top: 60px;
@@ -72,21 +72,13 @@
         padding-right: 5%;
         padding-left: 5%;
     }
-
-    // container div of the gallery
-    .gallery {
-        height: 500px;
-        max-width: 100%;
-    }
-    
 }
 
-
-// gallery
-.BrainhubCarousel__dots {
-    background-color: rgba(0, 0, 0, 0.822);
-}
-.BrainhubCarousel__container {
-    background-color: rgba(0, 0, 0, 0.822);
+.GameDescribtion > .DescriptionHeader {
+    font-size: 1.5em;
 }
 
+.SwiperGameDisplayDiv {
+    padding-right: 5%;
+    padding-left: 5%;
+}

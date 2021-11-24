@@ -1,9 +1,11 @@
 .swiper-wrapper {
     display: flex;
 }
-.swiper-slide {
-    width: 120px;
-}
+
+//.swiper-slide {
+//    width: 120px;
+//}
+
 .swiperHeader {
     display: flex;
     flex-direction: row;
@@ -13,9 +15,3 @@
     color: black;
     font-weight: 600;
 }
-
-// In case you want to change the size of the image
-//.img-fluid {
-//    width: 30px;
-//    height: 15px;
-//}

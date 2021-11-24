@@ -8,7 +8,9 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import { useState } from 'react';
 import './Gallery.css'
 import ReactPlayer from 'react-player';
-const MyCarouselWithDots = () => {
+
+
+const Gallery = () => {
   const [value, setValue] = useState(0);
 
   const onChange = value => {
@@ -17,6 +19,15 @@ const MyCarouselWithDots = () => {
 
   return (
     <div>
+      <Carousel
+        value={value}
+        onChange={onChange}
+      >
+        <img alt='game' className="img-example" src={img1} />
+        <img alt='game' className="img-example" src={img1} />
+        <ReactPlayer width={711} height={400} url='https://youtu.be/vUhr1cwTrnQ' controls={true}/>
+        <img alt='game' className="img-example" src={img1} />
+      </Carousel>
       <Dots
         value={value}
         onChange={onChange}
@@ -28,20 +39,35 @@ const MyCarouselWithDots = () => {
         ]}
         //number={state.slides.length}
       />
-      <Carousel
-        value={value}
-        onChange={onChange}
-      >
-        <img alt='game' className="img-example" src={img1} />
-        <img alt='game' className="img-example" src={img1} />
-        <ReactPlayer width={711} height={400} url='https://youtu.be/vUhr1cwTrnQ' controls={true}/>
-        <img alt='game' className="img-example" src={img1} />
-      </Carousel>
-      
     </div>
   );
 };
 
-export default MyCarouselWithDots;
+export default Gallery;
 // you can make your dots compnents yourself if you want
 // <img onClick={ () => setValue(0)} className="img-example-small" src={img1} />
+
+// FOR API
+/*
+let array = [{ type:video, videoLink:www , imgLink:www },{},{},{}]; 
+  array.map( (x) => { return {x.imgLink} })
+  this should return array of images links then
+  newArray.map ( if (x.type === image ){
+    (x,index) => { return(
+
+    <silder>
+      <img onClick={ () => setValue(index)} className="img-example-small" src={x} />
+    <slider/>
+
+  )}
+  else {
+    (x,index) => { return(
+    <silder>
+      <ReactPlay onClick={ () => setValue(index)} className="img-example-small" src={x} />
+    <slider/>
+    )}
+  } 
+  )
+  ///
+  and for the thumbs no need for if else you just need the images and put them in slider 
+ */

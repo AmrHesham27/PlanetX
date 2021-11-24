@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Card, CardHeader, CardTitle, CardBody } from 'reactstrap'
 import img1 from '../../utils/img1.jpg'
 import './Swiper.css'
 
@@ -13,11 +12,11 @@ const params = {
 
 const SwiperMultiSlides = () => {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle tag='h4'>Multi Slides Per View</CardTitle>
-      </CardHeader>
-      <CardBody>
+    <>
+      <div className='swiperHeader'>
+          Game gallery
+      </div>
+      <>
         <Swiper {...params}>
           <SwiperSlide>
             <img src={img1} alt='swiper 1' className='img-fluid' />
@@ -35,8 +34,8 @@ const SwiperMultiSlides = () => {
             <img src={img1} alt='swiper 5' className='img-fluid' />
           </SwiperSlide>
         </Swiper>
-      </CardBody>
-    </Card>
+      </>
+    </>
   )
 }
 

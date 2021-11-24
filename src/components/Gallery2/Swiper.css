@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.swiper-slide {
-  width: 120px;
-}
-
 .swiperHeader {
   display: flex;
   flex-direction: row;
@@ -14,4 +10,15 @@
   padding: 12px 0;
   color: black;
   font-weight: 600;
+}
+
+.swiper-slide {
+  margin-right: 30px;
+  width: 100%;
+}
+
+.swiper-container {
+  overflow: hidden;
+  margin-right: 10%;
+  margin-left: 10%;
 }/*# sourceMappingURL=Swiper.css.map */

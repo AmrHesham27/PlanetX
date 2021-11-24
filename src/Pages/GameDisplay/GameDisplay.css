@@ -56,8 +56,8 @@
   }
 }
 .GameDisplay .GameDescribtion {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bolder;
   font-size: 1em;
   padding-top: 60px;
@@ -65,15 +65,12 @@
   padding-right: 5%;
   padding-left: 5%;
 }
-.GameDisplay .gallery {
-  height: 500px;
-  max-width: 100%;
+
+.GameDescribtion > .DescriptionHeader {
+  font-size: 1.5em;
 }
 
-.BrainhubCarousel__dots {
-  background-color: rgba(0, 0, 0, 0.822);
-}
-
-.BrainhubCarousel__container {
-  background-color: rgba(0, 0, 0, 0.822);
+.SwiperGameDisplayDiv {
+  padding-right: 5%;
+  padding-left: 5%;
 }/*# sourceMappingURL=GameDisplay.css.map */
