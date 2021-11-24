@@ -1,6 +1,6 @@
 import './ImgHeaderContact.css'
 import { Form } from 'react-bootstrap'
-import Footer2 from '../Footer2/Footer2'
+import FooterVideo from '../FooterVideo/FooterVideo'
 
 function ImgHeaderContact() {
   return (
@@ -39,7 +39,7 @@ function ImgHeaderContact() {
           <p  className='p3'>mohamedsamy133@hotmail.com</p>
         </div>
       </div>
-      <Footer2/>
+      <FooterVideo/>
     </div>
   )
 }

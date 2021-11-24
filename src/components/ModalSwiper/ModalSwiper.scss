@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////
+// Swiper Component
+//.SwiperOfModal
+.SwiperOfModal {
+   margin-top: 20px;
+}
+// Header you wrote for the swiper 
+.SwiperOfModal > .swiperHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 12px 0;
+    color: black;
+    font-weight: 600;
+}
+// container
+.SwiperOfModal > .swiper-container {
+    overflow: hidden;
+    margin-left: 5% ;
+    margin-right: 5%;
+}
+// wraper in the container
+.SwiperOfModal > .swiper-container > .swiper-wrapper {
+    display: flex;
+}
+// swiper slide
+// set params - space between to 0 and make the margin you want here
+.SwiperOfModal > .swiper-container > .swiper-wrapper > .swiper-slide {
+    margin-right: 30px;
+    width: 100%;
+}
+// img fluid
+.SwiperOfModal > .swiper-container > .swiper-wrapper > .swiper-slide > .img-fluid {
+    width: 200px;
+    max-width: 200px;
+    @media screen and (max-width:800px){
+        width: 150px;
+        max-width: 150px;    
+    }
+    @media screen and (max-width:500px){
+        width: 100px;
+        max-width: 100px;    
+    }
+}
+////////////////////////////////////////////////////////////////////////
+// Carousel Compnent
+// chnage img size in Gallery One Image in Modal
+.img-example {
+    width: 70%;
+    @media screen and (max-width:500px) {
+        width: 100%;
+    }
+}

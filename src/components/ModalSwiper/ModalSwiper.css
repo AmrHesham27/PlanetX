@@ -1,0 +1,54 @@
+.SwiperOfModal {
+  margin-top: 20px;
+}
+
+.SwiperOfModal > .swiperHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 12px 0;
+  color: black;
+  font-weight: 600;
+}
+
+.SwiperOfModal > .swiper-container {
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.SwiperOfModal > .swiper-container > .swiper-wrapper {
+  display: flex;
+}
+
+.SwiperOfModal > .swiper-container > .swiper-wrapper > .swiper-slide {
+  margin-right: 30px;
+  width: 100%;
+}
+
+.SwiperOfModal > .swiper-container > .swiper-wrapper > .swiper-slide > .img-fluid {
+  width: 200px;
+  max-width: 200px;
+}
+@media screen and (max-width: 800px) {
+  .SwiperOfModal > .swiper-container > .swiper-wrapper > .swiper-slide > .img-fluid {
+    width: 150px;
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .SwiperOfModal > .swiper-container > .swiper-wrapper > .swiper-slide > .img-fluid {
+    width: 100px;
+    max-width: 100px;
+  }
+}
+
+.img-example {
+  width: 70%;
+}
+@media screen and (max-width: 500px) {
+  .img-example {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ModalSwiper.css.map */

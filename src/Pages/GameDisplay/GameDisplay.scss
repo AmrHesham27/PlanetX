@@ -24,7 +24,7 @@
         -webkit-filter: blur(12px);
         
         /* Full height */
-        height: 500px; 
+        height: 650px; 
         
         /* Center and scale the image nicely */
         background-position: center;
@@ -44,7 +44,7 @@
             transform: translate(-50%, -50%);
             z-index: 2;
             width: 100%;
-            height: 500px;
+            height: 700px;
             padding: 20px;
             text-align: center;
             display: flex;
@@ -58,10 +58,12 @@
             .gameInfo {
                 display: flex;
                 flex-direction: row;
+                margin-top: 100px;
+                
                 //justify-items: flex-end;
                 top: 100px;
                 position: absolute;
-                @media screen and (max-width:600px) {
+                @media screen and (max-width:800px) {
                     flex-direction: column-reverse;
                 }
                 .ImgAndButton {
@@ -69,6 +71,23 @@
                     flex-direction: column;
                     margin: 20px 0;
                     align-items: center;
+
+                    .ImgOfInfo {
+                        width: 500px;
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        @media screen and (max-width:800px){
+                            width: 500px;
+                        }
+                        @media screen and (max-width:700px){
+                            width: 500px;
+                        }
+                        @media screen and (max-width:500px){
+                            width: 100%;
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                    }
 
                     .ButtonBooking {
                         margin-top: 30px;
@@ -78,6 +97,7 @@
                         background-color: crimson;
                         color: white;
                         border: 2px solid white;
+                        font-size: 1.1em;
                         font-weight: bolder;
 
                     }
@@ -112,17 +132,12 @@
         font-weight: bolder;
         font-size: 1em;
         padding-top: 90px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
         padding-right: 5%;
         padding-left: 5%;
     }
 }
 
 .GameDescribtion > .DescriptionHeader {
-    font-size: 1.5em;
-}
-
-.SwiperGameDisplayDiv {
-    padding-right: 5%;
-    padding-left: 5%;
+    font-size: calc(1rem + 1.5vw);
 }

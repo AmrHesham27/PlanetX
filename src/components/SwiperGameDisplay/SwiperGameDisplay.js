@@ -2,19 +2,17 @@
 import img1 from '../../utils/img1.jpg'
 // css
 import './SwiperGameDisplay.css'
-import './Modal.css'
-import './Swiper.css'
 // Components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Modal from 'react-bootstrap/Modal'
 // react
 import { useState } from "react";
-import Gallery2 from '../Gallery2/Gallery2'
+import ModalSwiper from '../ModalSwiper/ModalSwiper'
 
 
 const params = {
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: 'auto',
+  spaceBetween: 0,
   pagination: {
     clickable: true
   }
@@ -25,7 +23,7 @@ const SwiperGameDisplay = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
   return (
-    <>
+    <div class='SwiperGameDisplayDiv'>   
         <div className='swiperHeader'>
             Game gallery
         </div>
@@ -54,7 +52,7 @@ const SwiperGameDisplay = () => {
                 </Modal.Header>
 
                 <Modal.Body bsPrefix={'myModalBody'}>
-                    <Gallery2/>
+                    <ModalSwiper/>
                 </Modal.Body>
 
                 <Modal.Footer bsPrefix={'myModalFooter'}>
@@ -63,7 +61,7 @@ const SwiperGameDisplay = () => {
                 </button >
                 </Modal.Footer>
         </Modal>
-    </>
+    </div>
   )
 }
 

@@ -21,7 +21,7 @@ const GameDisplay = (props) => {
               }
               <div className='gameInfo'>
                 <div className='ImgAndButton'>
-                  <img alt='game' src={img1} style={{width:'300px',height:'169px'}} />
+                  <img className='ImgOfInfo' alt='game' src={img1} />
                   <button className='ButtonBooking'>Book Game</button>
                 </div>
                 
@@ -42,9 +42,7 @@ const GameDisplay = (props) => {
               </p>
           </div>
         
-        <div class='SwiperGameDisplayDiv'>
-          <SwiperGameDisplay/>
-        </div>
+        <SwiperGameDisplay/>
       </div>
      
       </>

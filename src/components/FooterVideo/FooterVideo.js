@@ -1,6 +1,6 @@
 import './Footer2.css'
 
-function Footer2() {
+function FooterVideo() {
     return (
         <div className='footerVideo'>
             <video src='/videos/4.mp4' autoPlay loop muted />
@@ -9,4 +9,4 @@ function Footer2() {
     )
 }
 
-export default Footer2;
+export default FooterVideo;
