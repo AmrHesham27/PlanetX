@@ -6,7 +6,6 @@ import Header from '../../components/Header/Header'
 // utils 
 import img1 from '../../utils/img1.jpg'
 import SwiperGameDisplay from '../../components/SwiperGameDisplay/SwiperGameDisplay'
-import Gallery2 from '../../components/Gallery2/Gallery2'
 //import img2 from '../../utils/img2.jpg'
 
 const GameDisplay = (props) => {
@@ -21,8 +20,15 @@ const GameDisplay = (props) => {
               {// add down here your img and game name
               }
               <div className='gameInfo'>
-                <img alt='game' src={img1} style={{width:'300px',height:'169px'}} />
-                <h1>City Z</h1>
+                <div className='ImgAndButton'>
+                  <img alt='game' src={img1} style={{width:'300px',height:'169px'}} />
+                  <button className='ButtonBooking'>Book Game</button>
+                </div>
+                
+                <div className='textInfoContainer'>
+                  <h1 className='gameInfoHeader'>City Z</h1>
+                  <p className='gameInfoDescription'>Action & adventure</p>
+                </div>
               </div>
             
             </div>

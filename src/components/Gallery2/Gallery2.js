@@ -32,7 +32,7 @@ const Gallery2 = () => {
     (x,index) => {
         return (
             <SwiperSlide>
-                <img onClick={ () => {setValue( index )} } className='img-fluid' src={x} key={index} />
+                <img onClick={ () => {setValue( index )} } className='img-fluid' src={x} key={index} alt='Game' />
             </SwiperSlide>
         )
     }
