@@ -132,7 +132,6 @@
         font-weight: bolder;
         font-size: 1em;
         padding-top: 90px;
-        padding-bottom: 30px;
         padding-right: 5%;
         padding-left: 5%;
     }
@@ -140,4 +139,73 @@
 
 .GameDescribtion > .DescriptionHeader {
     font-size: calc(1rem + 1.5vw);
+}
+
+.SwiperGameDisplayDiv {
+    margin-top: calc(2rem + 3vw);
+}
+
+.ReviewOfGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .GameReviewHeader {
+        font-size: calc(1rem + 1.5vw);
+        font-weight: 600;
+    }
+    .startAndPercent {
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .percentInReview {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.GameDisplayComments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px ;
+}
+.ReviewAndComments {
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(2rem + 3vw);
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width:900px) {
+        flex-direction: column;
+
+    }
+}
+///////////////////////////////////////////
+// Similar Games Section
+.SimilarGames {
+    margin-top: calc(2rem + 3vw);
+    margin-bottom: calc(2rem + 3vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .SimilarGamesHeader {
+        font-size: calc(1rem + 1.5vw);
+        font-weight: 600;
+    }
+    .GamesContainerSimilar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .GamesContainerSimilar > .GameCard {
+        width: 200px;
+    }
 }

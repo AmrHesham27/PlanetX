@@ -1,13 +1,13 @@
 .GameCard {
   color: rgba(0, 0, 0, 0.753);
   margin: 20px;
-  width: 250px;
+  width: 300px;
+  text-align: center;
   border: 1px solid grey;
   border-radius: 4px;
 }
 .GameCard .Figure {
   position: relative;
-  width: 100%;
   overflow: hidden;
   margin-bottom: 0;
 }
@@ -17,7 +17,7 @@
   margin: 3px 0;
 }
 .GameCard img {
-  width: 100%;
+  width: 101%;
   top: 0;
   right: 0;
   bottom: 0;

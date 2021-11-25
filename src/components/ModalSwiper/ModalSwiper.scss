@@ -19,6 +19,8 @@
     overflow: hidden;
     margin-left: 5% ;
     margin-right: 5%;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 // wraper in the container
 .SwiperOfModal > .swiper-container > .swiper-wrapper {
@@ -47,8 +49,21 @@
 // Carousel Compnent
 // chnage img size in Gallery One Image in Modal
 .img-example {
-    width: 70%;
-    @media screen and (max-width:500px) {
+    width: 800px;
+    @media screen and (max-width:1000px) {
         width: 100%;
+    }
+}
+////////////////////////////////////////////////////////////////////////
+.VideoOfGame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+    @media screen and (max-width:1000px) {
+        width: 100vw;
+        height: 56.25vw;
     }
 }

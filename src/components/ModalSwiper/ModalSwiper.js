@@ -49,7 +49,9 @@ const ModalSwiper = () => {
       >
         <img alt='game' className="img-example" src={img1} />
         <img alt='game' className="img-example" src={img1} />
-        <ReactPlayer width={711} height={400} url='https://youtu.be/vUhr1cwTrnQ' controls={true}/>
+        <div className='VideoOfGame'>
+          <ReactPlayer url='https://youtu.be/vUhr1cwTrnQ' controls={true}/>
+        </div>
         <img alt='game' className="img-example" src={img1} />
       </Carousel>
       <div className='SwiperOfModal'>

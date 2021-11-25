@@ -33,16 +33,16 @@ const SwiperGameDisplay = () => {
                 <img src={img1} alt='swiper 1' className='img-fluid' onClick={handleShow} />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={img1} alt='swiper 2' className='img-fluid' />
+                <img src={img1} alt='swiper 2' className='img-fluid' onClick={handleShow} />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={img1} alt='swiper 3' className='img-fluid' />
+                <img src={img1} alt='swiper 3' className='img-fluid' onClick={handleShow} />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={img1} alt='swiper 4' className='img-fluid' />
+                <img src={img1} alt='swiper 4' className='img-fluid' onClick={handleShow} />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={img1} alt='swiper 5' className='img-fluid' />
+                <img src={img1} alt='swiper 5' className='img-fluid' onClick={handleShow} />
             </SwiperSlide>
         </Swiper>
         

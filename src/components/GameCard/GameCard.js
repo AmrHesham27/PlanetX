@@ -1,6 +1,6 @@
 import './GameCard.css'
 
-function HomeCard(props) {
+function GameCard(props) {
     return (
         <div className='GameCard' >
             <p>{props.name}</p>
@@ -11,6 +11,4 @@ function HomeCard(props) {
     )
 }
 
-export default HomeCard
-
- 
+export default GameCard

@@ -1,22 +1,23 @@
 .GameCard {
     color: rgba(0, 0, 0, 0.753);
     margin: 20px;
-    width: 250px;
+    width: 300px;
+    text-align: center;
 
     .Figure{
         position: relative;
-        width: 100%;
-        //padding-top: 67%;
         overflow: hidden;
         margin-bottom: 0;
     }
+
     p {
         font-size: 18px;
         font-weight: bolder;
         margin: 3px 0;
     }
+
     img {
-        width: 100%;
+        width: 101%;
         top: 0;
         right: 0;
         bottom: 0;
@@ -25,9 +26,11 @@
         object-fit: cover;
         transition: all 0.2s linear;
     }
+
     img:hover {
         transform: scale(1.1);
     }
+    
     border: 1px solid grey;
     border-radius: 4px;
 }
