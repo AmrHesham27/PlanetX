@@ -1,0 +1,41 @@
+// Slick Container
+.SLICK {
+    margin: 100px;
+    border: 1px solid grey;
+    border-radius: 5px;
+} 
+/////////////////////////////
+// to change the width change it in this two places
+// img of slider
+.img-fluid2 {
+    margin-right: 20px;
+    width: 220px;
+}
+// div of slider
+.fluidDiv {
+    width: 220px;
+    margin-right: 10px ;
+}
+/////////////////////////////
+// without this line there will be gab
+.slick-slide img {
+    display: inline-block;
+}
+/////////////////////////////
+// slick arrows
+.slick-arrow::after {
+    content: none;
+}
+.slick-arrow::before {
+    content: none;
+}
+.slick-arrow,.slick-arrow:focus,.slick-arrow:hover {
+    color: black;
+    background-color: white;
+    opacity: 1;
+    //border: 1px solid grey;
+    font-size: 1em;
+    border-radius: 50%;
+    user-select: none;
+}
+/////////////////////////////

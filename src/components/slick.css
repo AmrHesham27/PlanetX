@@ -1,0 +1,39 @@
+.SLICK {
+  margin: 100px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.img-fluid2 {
+  margin-right: 20px;
+  width: 220px;
+}
+
+.fluidDiv {
+  width: 220px;
+  margin-right: 10px;
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+.slick-arrow::after {
+  content: none;
+}
+
+.slick-arrow::before {
+  content: none;
+}
+
+.slick-arrow, .slick-arrow:focus, .slick-arrow:hover {
+  color: black;
+  background-color: white;
+  opacity: 1;
+  font-size: 1em;
+  border-radius: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}/*# sourceMappingURL=slick.css.map */

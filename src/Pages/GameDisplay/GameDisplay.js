@@ -11,6 +11,7 @@ import SwiperGameDisplay from '../../components/SwiperGameDisplay/SwiperGameDisp
 import Star from '../../components/starComponent/star'
 import img2 from '../../utils/img2.jpg'
 import GameCard from '../../components/GameCard/GameCard'
+import SimpleSlider from '../../components/slick'
 
 const GameDisplay = (props) => {
 
@@ -91,7 +92,7 @@ const GameDisplay = (props) => {
                 <GameCard img={img2} name={'City Z'}/>
               </div>
         </div>
-
+        <SimpleSlider/>
         <Footer/>
       </div>
      
