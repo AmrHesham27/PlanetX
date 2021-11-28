@@ -197,4 +197,8 @@
 }
 .SimilarGames .GamesContainerSimilar > .GameCard {
   width: 200px;
+  border: none;
+}
+.SimilarGames .GamesContainerSimilar > .GameCard > img {
+  width: 200px;
 }/*# sourceMappingURL=GameDisplay.css.map */

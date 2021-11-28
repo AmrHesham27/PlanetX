@@ -1,17 +1,15 @@
 .SLICK {
-  margin: 100px;
+  margin: 100px 7%;
   border: 1px solid grey;
   border-radius: 5px;
 }
 
 .img-fluid2 {
-  margin-right: 20px;
-  width: 220px;
+  width: 90%;
 }
 
 .fluidDiv {
-  width: 220px;
-  margin-right: 10px;
+  width: 90%;
 }
 
 .slick-slide img {

@@ -205,7 +205,13 @@
         flex-wrap: wrap;
 
     }
+    // customize game card here 
     .GamesContainerSimilar > .GameCard {
+        width: 200px;
+        border: none;
+    }
+    .GamesContainerSimilar > .GameCard > img {
         width: 200px;
     }
 }
+/////////////////////////////////////////////

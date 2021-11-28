@@ -8,6 +8,7 @@ import Modal from 'react-bootstrap/Modal'
 // react
 import { useState } from "react";
 import ModalSwiper from '../ModalSwiper/ModalSwiper'
+//import '@styles/react/libs/swiper/swiper.scss'
 
 
 const params = {

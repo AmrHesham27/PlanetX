@@ -1,28 +1,29 @@
 // Slick Container
 .SLICK {
-    margin: 100px;
+    margin: 100px 7%;
     border: 1px solid grey;
     border-radius: 5px;
 } 
 /////////////////////////////
-// to change the width change it in this two places
+// here you set the gab between images 
+// yo have to change in this two places
 // img of slider
 .img-fluid2 {
-    margin-right: 20px;
-    width: 220px;
+    width: 90%;
 }
 // div of slider
 .fluidDiv {
-    width: 220px;
-    margin-right: 10px ;
+    width: 90%;
 }
 /////////////////////////////
-// without this line there will be gab
+// without this line there will be bottom gab
 .slick-slide img {
     display: inline-block;
 }
 /////////////////////////////
 // slick arrows
+// it comes hidden from the dveeloper 
+// so i fix it here 
 .slick-arrow::after {
     content: none;
 }

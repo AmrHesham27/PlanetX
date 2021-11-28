@@ -11,7 +11,7 @@ import SwiperGameDisplay from '../../components/SwiperGameDisplay/SwiperGameDisp
 import Star from '../../components/starComponent/star'
 import img2 from '../../utils/img2.jpg'
 import GameCard from '../../components/GameCard/GameCard'
-import SimpleSlider from '../../components/slick'
+import SimpleSlider from '../../components/SlickSwiper/slick'
 
 const GameDisplay = (props) => {
 
