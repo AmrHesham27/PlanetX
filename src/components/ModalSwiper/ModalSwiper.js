@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "none", color:'white' }}
+      style={{ ...style, display: "block", background: "none", color:'white', fontSize:'1.5em' }}
       onClick={onClick}
     >
       <i className='fas fa-chevron-right'></i>
@@ -28,7 +28,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "none", color:'white' }}
+      style={{ ...style, display: "block", background: "none", color:'white', fontSize:'1.5em' }}
       onClick={onClick}
     >
       <i className='fas fa-chevron-left'></i>
@@ -86,18 +86,12 @@ const ModalSwiper = () => {
       }
     ]
   };
-
-  const onChange = value => {
-  setValue(value);
-  }
-
-  
   
   return (
     <div className='ModalSwiper'>
       <Carousel
         value={value}
-        onChange={onChange}
+        onChange={() => setValue(value)}
       >
         <img alt='game' className="img-example" src={img1} />
         <img alt='game' className="img-example" src={img1} />

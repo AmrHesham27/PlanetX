@@ -24,9 +24,7 @@ const Games = () => {
         window.onscroll = () => {
         setOffset(window.pageYOffset)
         }
-    }, []);
-    
-    console.log(offset, typeof(offset)); 
+    }, []);    
     return (
         <>
             <Header style={offset === 0 ? firstStyle:secondStyle} />

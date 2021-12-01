@@ -106,21 +106,20 @@ export default class SimpleSlider extends Component {
           {this.imagesCode}
         </Slider>
 
-        <Modal show={this.state.show} onHide={this.handleClose} dialogAs={'div'} dialogClassName={'myModal'}>
-                <Modal.Header closeButton bsPrefix='myModalTitle'>
-                    <Modal.Title >Game gallery</Modal.Title>
-                </Modal.Header>
+        <div className='myModalContainer'>
+          <Modal show={this.state.show} onHide={this.handleClose} dialogAs={'div'} dialogClassName={'myModal'}>
+                  <Modal.Header closeButton bsPrefix='myModalTitle'>
+                      <Modal.Title >Game gallery</Modal.Title>
+                  </Modal.Header>
 
-                <Modal.Body bsPrefix={'myModalBody'}>
-                    <ModalSwiper/>
-                </Modal.Body>
-
-                <Modal.Footer bsPrefix={'myModalFooter'}>
-                <button className='closeButton' onClick={this.handleClose}>
-                    Close
-                </button >
-                </Modal.Footer>
-        </Modal>
+                  <Modal.Body bsPrefix={'myModalBody'}>
+                      <ModalSwiper/>
+                  </Modal.Body>
+                  <button className='closeButton' onClick={this.handleClose}>
+                          X
+                  </button >
+          </Modal>
+        </div>
       </div>
     </>
     );

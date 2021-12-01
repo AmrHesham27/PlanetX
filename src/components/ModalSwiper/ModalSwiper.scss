@@ -28,13 +28,6 @@
         height: 56.25vw;
     }
 }
-/////////////////////////////////////////////////////////////////////////
-// contorl width of the whle compnent 
-.SwiperOfModal {
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-}
 ///////////////////////////////////////////
 // class for dots
 // the first class is the class of the div component
@@ -45,5 +38,5 @@
 }
 .SwiperOfModal .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: black;
+    color: rgb(231, 3, 60);
 }

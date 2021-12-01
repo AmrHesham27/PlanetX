@@ -7,6 +7,25 @@
   color: black;
 }
 
+.myModal {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media screen and (max-width: 500px) {
+  .myModal {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.myModalBody {
+  background-color: rgba(0, 0, 0, 0.801);
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
 .img-fluid2, .fluidDiv {
   width: 95%;
 }
@@ -46,7 +65,8 @@
   background-color: white;
   outline: none;
   border: none;
-  border-radius: 5px;
   float: right;
-  margin: 10px;
+  margin: 0;
+  margin-top: 4px;
+  bottom: 0;
 }/*# sourceMappingURL=slick.css.map */

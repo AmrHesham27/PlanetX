@@ -31,12 +31,6 @@
   }
 }
 
-.SwiperOfModal {
-  width: 80%;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
 .SwiperOfModal .slick-dots li button:before {
   opacity: 1;
   color: white;
@@ -44,5 +38,5 @@
 
 .SwiperOfModal .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: black;
+  color: #e7033c;
 }/*# sourceMappingURL=ModalSwiper.css.map */

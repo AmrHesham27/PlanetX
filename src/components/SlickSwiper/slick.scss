@@ -9,6 +9,24 @@
     color: black;
 } 
 /////////////////////////////
+// control the width of the modal
+.myModal {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    @media screen and (max-width:500px) {
+        width: 100%;
+        max-width: 100%;
+        margin:0 ;
+    }
+}
+// control the color of the modal
+.myModalBody {
+    background-color: rgba(0, 0, 0, 0.801);
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+/////////////////////////////
 // here you set the gab between images 
 // yo have to change in this two places
 // img of slider
@@ -49,7 +67,8 @@
     background-color: white;
     outline: none;
     border: none;
-    border-radius: 5px;
     float: right;
-    margin: 10px;
+    margin: 0;
+    margin-top: 4px;
+    bottom: 0;
 }
