@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 // css
 import './Games.css'
 // compnents
@@ -16,9 +17,19 @@ const Games = () => {
         history.push(to);
     }
 
+    let firstStyle = {backgroundColor:'transparent',backdropFilter:'none'};
+    let secondStyle = {backgroundColor:'rgba(0,0,0,0.7)',backdropFilter:'blur(10px)'};
+    const [offset, setOffset] = useState(0);
+    useEffect(() => {
+        window.onscroll = () => {
+        setOffset(window.pageYOffset)
+        }
+    }, []);
+    
+    console.log(offset, typeof(offset)); 
     return (
         <>
-            <Header/>
+            <Header style={offset === 0 ? firstStyle:secondStyle} />
             <div className="GamesPage">
                 <div className="containerCards">
                     <div onClick={()=>routeTo('/City Z')}>

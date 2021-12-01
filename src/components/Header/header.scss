@@ -33,6 +33,25 @@
     position: static;
 }
 .Header{
+    //background-color: black;
+    //box-sizing: border-box;
+    //height: 48px;
+    background-color: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(10px);
+    ///// position sticky instead of fixed
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 ;
+    border-bottom-width: 0px;
+    // so that it display over anything
+    z-index: 3000;
     .myA {
         background-color: transparent;
         color: white;
@@ -56,26 +75,6 @@
         flex-direction: column;
         justify-content: center;
     }
-    //background-color: black;
-    //box-sizing: border-box;
-    //height: 48px;
-    background-color: rgba(0, 0, 0, 0.70);
-    backdrop-filter: blur(10px);
-    ///// position sticky instead of fixed
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 ;
-    border-bottom-width: 0px;
-    // so that it display over anything
-    z-index: 3000;
-   
     .logo {
         color: white;
         padding: 0 12px;

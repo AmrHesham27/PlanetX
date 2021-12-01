@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import  Off  from './Offcanavas';
 import { NavDropdown } from 'react-bootstrap'
 
-function Header() {
+function Header(props) {
   // to be used in buttons to route the user
   const history = useHistory()
   const routeTo = (to) => {
@@ -29,7 +29,7 @@ function Header() {
   }, []);
    
   return (
-    <div className='Header' >
+    <div className='Header' style={props.style} >
       <div className='LogoContainer'>
         <h2 onClick={() => routeTo('/')} className='logo'>Planet <span style={{color:'red'}}>X</span></h2>
       </div>
