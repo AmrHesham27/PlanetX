@@ -1,15 +1,19 @@
 .SLICK {
-  margin: 100px 7%;
-  border: 1px solid grey;
+  margin: calc(2rem + 3vw) 7% 0 7%;
   border-radius: 5px;
+  text-align: center;
+  font-size: calc(1rem + 1.5vw);
+  font-weight: 600;
+  color: black;
 }
 
-.img-fluid2 {
-  width: 90%;
+.img-fluid2, .fluidDiv {
+  width: 95%;
 }
-
-.fluidDiv {
-  width: 90%;
+@media screen and (max-width: 480px) {
+  .img-fluid2, .fluidDiv {
+    width: 100%;
+  }
 }
 
 .slick-slide img {
@@ -34,4 +38,15 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.closeButton {
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  margin: 10px;
 }/*# sourceMappingURL=slick.css.map */

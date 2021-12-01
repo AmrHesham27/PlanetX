@@ -3,43 +3,95 @@
 import { useState } from 'react'
 import ReactPlayer from 'react-player'
 // libararies
-import { Swiper, SwiperSlide } from 'swiper/react'
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
+import Slider from "react-slick";
 // css
 import './ModalSwiper.css'
 // utils
 import img1 from '../../utils/img1.jpg'
 
-const params = {
-  slidesPerView: 'auto',
-  spaceBetween: 0,
-  pagination: {
-    clickable: true
-  }
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "none", color:'white' }}
+      onClick={onClick}
+    >
+      <i className='fas fa-chevron-right'></i>
+    </div>
+  );
+}
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "none", color:'white' }}
+      onClick={onClick}
+    >
+      <i className='fas fa-chevron-left'></i>
+    </div>
+  );
 }
 
 const ModalSwiper = () => {
   const arrayOfLinks = [
-    'https://i1.wp.com/www.thexboxhub.com/wp-content/uploads/2021/10/world-war-z-aftermath-review-1.jpeg?fit=1399%2C787&ssl=1',
-    'https://i1.wp.com/www.thexboxhub.com/wp-content/uploads/2021/10/world-war-z-aftermath-review-1.jpeg?fit=1399%2C787&ssl=1',
-    'https://i1.wp.com/www.thexboxhub.com/wp-content/uploads/2021/10/world-war-z-aftermath-review-1.jpeg?fit=1399%2C787&ssl=1',
-    'https://i1.wp.com/www.thexboxhub.com/wp-content/uploads/2021/10/world-war-z-aftermath-review-1.jpeg?fit=1399%2C787&ssl=1',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
+    'https://questroom.com.ua/dist/pict_rooms/pGzuPeKb.jpg',
   ];
   const [value, setValue] = useState(0);
   let arrayOfElements = arrayOfLinks.map(
     (x,index) => {
         return (
-            <SwiperSlide>
-                <img onClick={ () => {setValue( index )} } className='img-fluid' src={x} key={index} alt='Game' />
-            </SwiperSlide>
+            <div className='fluidDiv0'>
+                <img onClick={ () => {setValue( index )} } className='img-fluid0' src={x} key={index} alt='Game' />
+            </div>
         )
     }
   );
 
+  // for the react-slick slider
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow:3,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
+  };
+
   const onChange = value => {
   setValue(value);
   }
+
+  
   
   return (
     <div className='ModalSwiper'>
@@ -55,9 +107,9 @@ const ModalSwiper = () => {
         <img alt='game' className="img-example" src={img1} />
       </Carousel>
       <div className='SwiperOfModal'>
-        <Swiper {...params}>
-            {arrayOfElements}
-        </Swiper>
+        <Slider {...settings}>
+          {arrayOfElements}
+        </Slider>
       </div>
       
     </div>

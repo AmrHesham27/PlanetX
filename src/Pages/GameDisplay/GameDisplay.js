@@ -7,7 +7,6 @@ import Footer from '../../components/Footer/Footer'
 import UserComment from '../../components/UserComment/UserComment'
 // utils 
 import img1 from '../../utils/img1.jpg'
-import SwiperGameDisplay from '../../components/SwiperGameDisplay/SwiperGameDisplay'
 import Star from '../../components/starComponent/star'
 import img2 from '../../utils/img2.jpg'
 import GameCard from '../../components/GameCard/GameCard'
@@ -47,7 +46,7 @@ const GameDisplay = (props) => {
               </p>
           </div>
         
-        <SwiperGameDisplay/>
+        <SimpleSlider/>
 
         <div className='ReviewAndComments'>
           <div className='ReviewOfGame'>
@@ -92,7 +91,6 @@ const GameDisplay = (props) => {
                 <GameCard img={img2} name={'City Z'}/>
               </div>
         </div>
-        <SimpleSlider/>
         <Footer/>
       </div>
      

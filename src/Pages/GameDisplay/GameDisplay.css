@@ -133,14 +133,24 @@
   font-size: calc(1rem + 1.5vw);
 }
 
-.SwiperGameDisplayDiv {
+.ReviewAndComments {
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
   margin-top: calc(2rem + 3vw);
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 900px) {
+  .ReviewAndComments {
+    flex-direction: column;
+  }
 }
 
 .ReviewOfGame {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .ReviewOfGame .GameReviewHeader {
   font-size: calc(1rem + 1.5vw);
@@ -155,26 +165,26 @@
 .ReviewOfGame .startAndPercent .percentInReview {
   margin-left: 10px;
 }
+@media screen and (max-width: 700px) {
+  .ReviewOfGame {
+    align-items: center;
+  }
+}
 
 .GameDisplayComments {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 50px;
-}
-
-.ReviewAndComments {
-  padding-left: 5%;
-  padding-right: 5%;
-  justify-content: center;
-  align-items: center;
-  margin-top: calc(2rem + 3vw);
-  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
-@media screen and (max-width: 900px) {
-  .ReviewAndComments {
+@media screen and (max-width: 700px) {
+  .GameDisplayComments {
     flex-direction: column;
+    justify-content: center;
+  }
+  .GameDisplayComments .UserComment {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -196,9 +206,9 @@
   flex-wrap: wrap;
 }
 .SimilarGames .GamesContainerSimilar > .GameCard {
-  width: 200px;
+  width: 220px;
   border: none;
 }
 .SimilarGames .GamesContainerSimilar > .GameCard > img {
-  width: 200px;
+  width: 220px;
 }/*# sourceMappingURL=GameDisplay.css.map */
