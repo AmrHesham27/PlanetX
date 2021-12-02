@@ -10,7 +10,7 @@ class Star extends React.Component {
         <StarRatingComponent 
           name="rate2" 
           editing={false}
-          renderStarIcon={() => <i class="fas fa-star"></i> }
+          renderStarIcon={() => <i className="fas fa-star"></i> }
           starCount={5}
           value={rating}
         />

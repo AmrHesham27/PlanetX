@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer'
 import Img1 from '../../utils/1.jpg'
 import { useHistory } from 'react-router'
 import GameCard from '../../components/GameCard/GameCard'
+import FooterFollowUs from '../../components/FooterFollowUs/FooterFollowUs'
 
 
 
@@ -43,7 +44,7 @@ const Games = () => {
                         <GameCard name='City Z' img={Img1} />
                     </div>
                 </div>
-                
+                <FooterFollowUs/>
                 <Footer/>
             </div>
         </>

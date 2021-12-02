@@ -52,9 +52,9 @@ export default class SimpleSlider extends Component {
   handleShow(){this.setState({show:true})};
 
   imagesCode (){ 
-    let newImages = images.map((img)=>{
+    let newImages = images.map((img,index)=>{
     return(
-      <div className='fluidDiv'>
+      <div className='fluidDiv' key={index}>
         <img src={img} alt='game' className='img-fluid2' onClick={this.handleShow}/>
       </div>
       )

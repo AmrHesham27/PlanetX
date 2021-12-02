@@ -18,9 +18,9 @@ const GameDisplay = (props) => {
       <>
         <Header/>
         <div className='GameDisplay'>
-          <div class='headerContainer'>
-            <div class="bg-image"> <p className='hiddenText'>this text is hidden</p> </div>
-            <div class="bg-text">
+          <div className='headerContainer'>
+            <div className="bg-image"> <p className='hiddenText'>this text is hidden</p> </div>
+            <div className="bg-text">
               {// add down here your img and game name
               }
               <div className='gameInfo'>
@@ -74,9 +74,9 @@ const GameDisplay = (props) => {
           </div>
 
           <div className='GameDisplayComments'>
-            <UserComment stars='5' userName='Amr Hesham' comment='I love this Game' head='Great game' date='10/09/2021'/>
-            <UserComment stars='5' userName='Amr Hesham' comment='I love this Game' head='Great game' date='10/09/2021'/>
-            <UserComment stars='5' userName='Amr Hesham' comment='I love this Game' head='Great game' date='10/09/2021'/>
+            <UserComment stars={5} userName='Amr Hesham' comment='I love this Game' head='Great game' date='10/09/2021'/>
+            <UserComment stars={5} userName='Amr Hesham' comment='I love this Game' head='Great game' date='10/09/2021'/>
+            <UserComment stars={5} userName='Amr Hesham' comment='I love this Game' head='Great game' date='10/09/2021'/>
           </div>
         </div>
 
