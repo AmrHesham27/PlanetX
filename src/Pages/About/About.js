@@ -92,7 +92,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
+                
                 <FooterFollowUs/>
             </div>
             <Footer/>
