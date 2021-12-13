@@ -7,7 +7,6 @@ import About from './Pages/About/About'
 import ContactUs from './Pages/ContactUs/ContactUs' 
 import GameDisplay from './Pages/GameDisplay/GameDisplay'
 import Games from './Pages/Games/Games'
-import LoginPage from './Pages/LoginPage/LoginPage'
 import Test from "./Pages/Test/Test"
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <Route path='/Contact' exact render={ () => (<ContactUs />) } />
         <Route path='/City Z' exact render={ () => (<GameDisplay />) } />
         <Route path='/Games' exact render={ () => (<Games />) } />
-        <Route path='/Login' exact render={ () => (<LoginPage />) } />
         <Route path='/Test' exact render={ () => (<Test />) } />
       </Switch >
     </BrowserRouter>
