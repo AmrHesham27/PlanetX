@@ -1,13 +1,13 @@
 .hero-container {
-    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-    height: calc(100vh - 100px);
+    background: url('https://store.ubi.com/on/demandware.static/-/Library-Sites-shared-library-web/default/dwe1d23bd1/ubisoftplus-games-redesign/ubisoft-plus_hero.jpg') center center/cover no-repeat; 
+    height: calc(100vh);
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     // if the video is too shiny use that
-    //box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.534);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
     object-fit: contain;
 
     video {
@@ -22,13 +22,8 @@
         color: #fff;
         //margin-top: 250px;
         margin-bottom: 0;
-        font-size: 5em;
-        @media screen and (max-width:800px){
-            font-size: 3em;
-        }
-        @media screen and (max-width:500px){
-            font-size: 2em;
-        }
+        font-size: calc(1.825rem + 2vw);
+        font-weight: 900;
     }
 
     
