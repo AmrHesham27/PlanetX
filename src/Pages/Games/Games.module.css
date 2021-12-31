@@ -1,17 +1,24 @@
 .GamesPage {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   min-height: 100vh;
 }
-.GamesPage .containerCards {
-  margin: 60px auto 550px auto;
+
+.containerCards {
+  margin: 60px auto 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 90%;
-}/*# sourceMappingURL=Games.css.map */
+}
+
+.spinner {
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=Games.module.css.map */

@@ -27,21 +27,35 @@ function Header(props) {
       window.removeEventListener('resize' , showButton)
     }
   }, []);
-   
+
+  // transparent header
+  const trans = props.trans
+  let firstStyle = {backgroundColor:'transparent',backdropFilter:'none'};
+  let secondStyle = {backgroundColor:'rgba(0,0,0,0.7)',backdropFilter:'blur(10px)'};
+  const [offset, setOffset] = useState(0);
+  useEffect(() => {
+      const trans = props.trans
+      if (trans) {
+      window.onscroll = () => {
+      setOffset(window.pageYOffset)
+      }}
+  }, [props]);
+  const style = (!trans ? secondStyle : (offset? secondStyle:firstStyle))
+  
   return (
-    <div className='Header' style={props.style} >
+    <div className='Header' style={ style } >
       <div className='LogoContainer'>
         <h2 onClick={() => routeTo('/')} className='logo'>Planet <span style={{color:'red'}}>X</span></h2>
       </div>
 
       {button?
       <div className='buttonsContainer'>
-        <a className='myA' href="/"> Home </a>
-        <a className='myA' href="/About"> About </a>
-        <a className='myA' href="/Contact"> Contact </a>
+        <button className='myA' onClick={() => routeTo('/')}>Home</button>
+        <button className='myA' onClick={() => routeTo('/About')}>About</button>
+        <button className='myA' onClick={() => routeTo('/ContactUs')}>Contact</button>
         <NavDropdown title="Games" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/Games">VR Games</NavDropdown.Item>
-          <NavDropdown.Item href="/Games">Escape room</NavDropdown.Item>
+          <button className='myA' style={{color:'black'}} onClick={() => routeTo('/Games')}>VR Games</button>
+          <button className='myA' style={{color:'black'}} onClick={() => routeTo('/Games')}>Escape room</button>
         </NavDropdown>
       </div>
       :
@@ -58,23 +72,3 @@ function Header(props) {
 }
 
 export default Header
-//const _ = require("lodash");
-
-//style={{backgroundColor:'rgba(0,0,0,0.7)' , backdropFilter:'blur(10px)'}}
-
-/*
-const [style, setStyle] = useState(JSON.stringify({backgroundColor:'transparent'}));
-  useEffect(() => {
-    let style = JSON.stringify({backgroundColor:'transparent'});
-    function callback (){
-      if(style===JSON.stringify({backgroundColor:'transparent'}) && window.scrollY > 1){(JSON.stringify({backgroundColor:'rgba(0,0,0,0.7)' , backdropFilter:'blur(10px)'}));console.log(1);}
-      else{return};
-    };
-    window.addEventListener('scroll', _.throttle(callback, 200));
-    return () => {
-      window.removeEventListener('scroll',_.throttle(callback, 200));
-    }
-  },[])
- */
-
-  //        <button className='Hbutton' onClick={() => routeTo('/Games')}> Games </button>

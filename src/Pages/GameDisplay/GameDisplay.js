@@ -1,3 +1,5 @@
+// react
+import { useHistory } from 'react-router-dom'
 // css
 import './GameDisplay.css'
 // components
@@ -13,6 +15,23 @@ import GameCard from '../../components/GameCard/GameCard'
 import SimpleSlider from '../../components/SlickSwiper/slick'
 
 const GameDisplay = (props) => {
+    const history = useHistory()
+
+    // should put data of game here 
+    const gameName = 'City Z';
+    // write images here
+
+    // function to send user to Booking game
+    const handleBooking = () => {
+      // build object of data 
+      const BookingData = {
+        gameName
+      }
+      // store data in the local storage
+      localStorage.setItem('BookingData', JSON.stringify(BookingData))
+      // route user
+      history.push('/Booking')
+    }
 
     return (
       <>
@@ -26,7 +45,7 @@ const GameDisplay = (props) => {
               <div className='gameInfo'>
                 <div className='ImgAndButton'>
                   <img className='ImgOfInfo' alt='game' src={img1} />
-                  <button className='ButtonBooking'>Book Game</button>
+                  <button onClick={handleBooking} className='ButtonBooking'>Book Game</button>
                 </div>
                 
                 <div className='textInfoContainer'>

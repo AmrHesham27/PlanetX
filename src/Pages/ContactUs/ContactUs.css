@@ -5,4 +5,14 @@
   .contactUsPage .ContactUs {
     margin-bottom: 200px;
   }
+}
+
+.footerDiv {
+  width: 100%;
+  margin-top: 300px;
+}
+@media screen and (max-width: 800px) {
+  .footerDiv {
+    margin-top: 600px;
+  }
 }/*# sourceMappingURL=ContactUs.css.map */

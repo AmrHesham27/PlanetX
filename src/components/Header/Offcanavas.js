@@ -35,7 +35,7 @@ function Off({ ...props }) {
               <p className='pLink' onClick={()=>{routeTo('/Games')}}>Escape room</p>
             </div>
             
-            <p className='pLink' onClick={()=>{routeTo('/Contact')}}>Contact</p>
+            <p className='pLink' onClick={()=>{routeTo('/ContactUs')}}>Contact</p>
             <p className='pLink' onClick={()=>{routeTo('/About')}}>About</p>            
           </Offcanvas.Body>
         </Offcanvas>

@@ -1,0 +1,12 @@
+.mainContainer {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.timeDiv {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=Booking.module.css.map */

@@ -12,9 +12,11 @@ function ContactUs() {
                 <div className='ContactUs'>
                     <ImgHeaderContact/>
                 </div>
-                <FooterFollowUs/>
             </div>
-            <Footer/>
+            <div className='footerDiv'>
+                <FooterFollowUs/>
+                <Footer/>
+            </div>
         </>
     )
 }

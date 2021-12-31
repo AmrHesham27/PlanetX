@@ -4,7 +4,6 @@ import FooterFollowUs from '../../components/FooterFollowUs/FooterFollowUs'
 import Footer from '../../components/Footer/Footer'
 import { useHistory } from 'react-router'
 import Header from '../../components/Header/Header'
-import { useState, useEffect } from 'react'
 
 const About = () => {
     // to be used in buttons to route the user
@@ -13,19 +12,10 @@ const About = () => {
         history.push(to)
     }
 
-    let firstStyle = {backgroundColor:'transparent',backdropFilter:'none'};
-    let secondStyle = {backgroundColor:'rgba(0,0,0,0.7)',backdropFilter:'blur(10px)'};
-    const [offset, setOffset] = useState(0);
-    useEffect(() => {
-        window.onscroll = () => {
-        setOffset(window.pageYOffset)
-        }
-    }, []);
-    
     return (
         <>
             <div className="About">
-                <Header style={offset === 0 ? firstStyle:secondStyle} />
+                <Header trans={true}/>
                 <ImgHeaderAbout/>
 
                 <div className='aboutContent'>
