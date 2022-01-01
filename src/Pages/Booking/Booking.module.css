@@ -1,9 +1,12 @@
 .mainContainer {
   padding-top: 50px;
+  color: white;
+  font-weight: 700;
+  background: url("https://store.ubi.com/on/demandware.static/-/Library-Sites-shared-library-web/default/dwe1d23bd1/ubisoftplus-games-redesign/ubisoft-plus_hero.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 }
 
 .containerDiv {
@@ -12,19 +15,18 @@
   align-items: center;
   text-align: center;
   margin-top: 10vh;
-  margin-bottom: 10vh;
 }
 
 .formLbael {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .formGroup {
   margin-top: 30px;
 }
 
-.datePicker {
+.timePicker {
   width: 100%;
 }
 
@@ -34,11 +36,18 @@
   outline: none;
   border: 2px solid white;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  padding: 7px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .confirmButton:hover {
   background-color: #008cff;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }/*# sourceMappingURL=Booking.module.css.map */
