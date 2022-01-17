@@ -5,16 +5,20 @@ import { useState } from "react"
 // css
 import './App.css'
 // fallback
-import Fallback from './Pages/fallback';
+import Fallback from '../Pages/fallback';
+// fetch
+import fetchAllGames from './fetchAllGames'
 
 function App() {
   // lazy compnents 
-  const Home = lazy(() => import('./Pages/Home/Home'));
-  const About = lazy(() => import('./Pages/About/About'));
-  const ContactUs = lazy(() => import('./Pages/ContactUs/ContactUs'));
-  const GameDisplay = lazy(() => import('./Pages/GameDisplay/GameDisplay'));
-  const Booking = lazy(() => import('./Pages/Booking/Booking'));
-  const GamesCompnent = lazy(() => import('./Pages/Games/Games'));
+  const Home = lazy(() => import('../Pages/Home/Home'));
+  const About = lazy(() => import('../Pages/About/About'));
+  const ContactUs = lazy(() => import('../Pages/ContactUs/ContactUs'));
+  const GameDisplay = lazy(() => import('../Pages/GameDisplay/GameDisplay'));
+  const Booking = lazy(() => import('../Pages/Booking/Booking'));
+  const GamesCompnent = lazy(() => import('../Pages/Games/Games'));
+  // test
+  const Test = lazy(() => import('../Pages/Test/Test'));
   const Games = () => {
     return (
         <Suspense fallback={<Fallback/>}>
@@ -27,6 +31,7 @@ function App() {
     <BrowserRouter>
         <Suspense fallback={<Fallback/>}>
           <Switch>
+            <Route exact path="/Test" component={Test}/>
             <Route exact path="/" component={Home}/>
             <Route exact path="/About" component={About}/>
             <Route exact path="/ContactUs" component={ContactUs}/>
@@ -39,22 +44,10 @@ function App() {
   );
 
   // all games fetch
-  const [gamesData, setGamesData] = useState(undefined)
-  if (!gamesData) {
-  fetch("https://planetxegy.herokuapp.com/games/all", {
-  method: "GET",
-  headers: {
-      "Content-type": "application/json; charset=UTF-8"
-  }})
-  .then(async function(response) {
-      const res = await response.json()
-      if (res.status === true) {
-        setGamesData(res.data)
-      }
-  })       
-  .catch(err => {
-      console.log(err)
-  })}
+  const [gamesData, setGamesData] = useState(undefined);
+  if(!gamesData){
+    fetchAllGames(setGamesData)
+  }
 
   return (
     <App/>
