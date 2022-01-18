@@ -7,6 +7,7 @@
   bottom: 0;
   z-index: -1;
 }
+
 .footerVideo video {
   -o-object-fit: cover;
      object-fit: cover;
@@ -14,4 +15,5 @@
   height: 100%;
   position: fixed;
   z-index: -1;
-}/*# sourceMappingURL=Footer2.css.map */
+}
+/*# sourceMappingURL=Footer2.css.map */

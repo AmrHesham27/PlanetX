@@ -1,6 +1,7 @@
 .contactUsPage .ContactUs {
   margin-bottom: 0;
 }
+
 @media screen and (max-width: 800px) {
   .contactUsPage .ContactUs {
     margin-bottom: 200px;
@@ -11,8 +12,10 @@
   width: 100%;
   margin-top: 300px;
 }
+
 @media screen and (max-width: 800px) {
   .footerDiv {
     margin-top: 600px;
   }
-}/*# sourceMappingURL=ContactUs.css.map */
+}
+/*# sourceMappingURL=ContactUs.css.map */

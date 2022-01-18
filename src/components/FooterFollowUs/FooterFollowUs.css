@@ -1,29 +1,53 @@
 .FooterFollowUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 50px;
   padding-top: 50px;
   background-color: #f6f6f6;
   width: 100%;
 }
+
 .FooterFollowUs .FooterWrapper {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .FooterFollowUs .FooterWrapper .P1 {
   color: black;
   font-weight: bolder;
   font-size: 22px;
 }
+
 .FooterFollowUs .FooterWrapper .iconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: start;
+      -ms-flex: start;
+          flex: start;
 }
+
 .FooterFollowUs .FooterWrapper .iconsContainer i {
   color: white;
   font-size: 28px;
   margin: 10px;
-}/*# sourceMappingURL=FooterFollowUs.css.map */
+}
+/*# sourceMappingURL=FooterFollowUs.css.map */

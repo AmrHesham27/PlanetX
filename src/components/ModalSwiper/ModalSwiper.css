@@ -1,6 +1,7 @@
 .img-fluid0, .fluidDiv0 {
   width: 95%;
 }
+
 @media screen and (max-width: 480px) {
   .img-fluid0, .fluidDiv0 {
     width: 100%;
@@ -10,6 +11,7 @@
 .img-example {
   width: 800px;
 }
+
 @media screen and (max-width: 1000px) {
   .img-example {
     width: 100%;
@@ -17,13 +19,23 @@
 }
 
 .VideoOfGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 800px;
   height: 450px;
 }
+
 @media screen and (max-width: 1000px) {
   .VideoOfGame {
     width: 100vw;
@@ -39,4 +51,5 @@
 .SwiperOfModal .slick-dots li.slick-active button:before {
   opacity: 1;
   color: #e7033c;
-}/*# sourceMappingURL=ModalSwiper.css.map */
+}
+/*# sourceMappingURL=ModalSwiper.css.map */

@@ -1,0 +1,56 @@
+.mainContainer {
+    padding-top : 50px;
+    color: white;
+    font-weight: 700;
+    // background 
+    background: url('https://store.ubi.com/on/demandware.static/-/Library-Sites-shared-library-web/default/dwe1d23bd1/ubisoftplus-games-redesign/ubisoft-plus_hero.jpg'); 
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+
+    // temporary to keep the fotter in the down
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.formLbael {
+    margin: 0;
+    font-size: 18px;
+}
+
+.formGroup {
+    margin-top: 30px;
+}
+
+.confirmButton {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.confirmButton:hover {
+    background-color: rgb(0, 140, 255);
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formGroup > input {
+    background-color: #f1f1f1;
+}

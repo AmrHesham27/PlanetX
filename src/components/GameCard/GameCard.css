@@ -6,16 +6,19 @@
   border: 1px solid grey;
   border-radius: 4px;
 }
+
 .GameCard .Figure {
   position: relative;
   overflow: hidden;
   margin-bottom: 0;
 }
+
 .GameCard p {
   font-size: 18px;
   font-weight: bolder;
   margin: 3px 0;
 }
+
 .GameCard img {
   width: 101%;
   top: 0;
@@ -25,8 +28,12 @@
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 .GameCard img:hover {
-  transform: scale(1.1);
-}/*# sourceMappingURL=GameCard.css.map */
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=GameCard.css.map */

@@ -41,10 +41,6 @@
   margin-top: 30px;
 }
 
-.timePicker {
-  width: 100%;
-}
-
 .confirmButton {
   background-color: black;
   color: white;
@@ -72,4 +68,8 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-/*# sourceMappingURL=Booking.module.css.map */
+
+.formGroup > input {
+  background-color: #f1f1f1;
+}
+/*# sourceMappingURL=Test.module.css.map */
